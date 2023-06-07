@@ -1,18 +1,19 @@
-/*
-Create a view
-*/
+-- Start: View
 
--- View syntax
-CREATE VIEW [view_name] AS
-    SELECT [column_1], [column_2], [column_3] ...
-    FROM [table_name]
-    WHERE {conditions}
+ -- Syntax
+ CREATE VIEW [view_name] AS
+     SELECT [column_1], [column_2], [column_3] ...
+     FROM [table_name]
+     WHERE {conditions}
+ 
+ -- Practical
+ CREATE VIEW EmployeeRecords AS
+ SELECT Person.Person.Title, Person.Person.FirstName, Person.Person.LastName,
+         Person.PersonPhone.PhoneNumber,
+         Person.PhoneNumberType.Name
+ FROM Person.Person INNER JOIN
+         Person.PersonPhone ON Person.Person.BusinessEntityID = Person.PersonPhone.BusinessEntityID INNER JOIN
+         Person.PhoneNumberType ON Person.PersonPhone.PhoneNumberTypeID = Person.PhoneNUmberType.PhoneNumberTypeID
+ WHERE (Person.Person.Title = 'Mr.')
 
-CREATE VIEW EmployeeRecords AS
-SELECT Person.Person.Title, Person.Person.FirstName, Person.Person.LastName,
-        Person.PersonPhone.PhoneNumber,
-        Person.PhoneNumberType.Name
-FROM Person.Person INNER JOIN
-        Person.PersonPhone ON Person.Person.BusinessEntityID = Person.PersonPhone.BusinessEntityID INNER JOIN
-        Person.PhoneNumberType ON Person.PersonPhone.PhoneNumberTypeID = Person.PhoneNUmberType.PhoneNumberTypeID
-WHERE (Person.Person.Title = 'Mr.')
+-- End: View
