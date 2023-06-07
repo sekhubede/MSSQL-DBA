@@ -1,7 +1,7 @@
 /*
 Theory:
 
--- WHERE Clause
+WHERE Clause
 - Used to specify a condition while fetching the data from a single table or by joining with multiple tables.
 - To filter the records and fetching only the necessary records.
 - Not only used in the ELECT statement, but it is also used in the UPDATE, DELETE statement, etc.
@@ -56,7 +56,7 @@ HAVING Clause
 - Enables you to specify conditions that filter which group results appear in the results.
 - The WHERE clause places conditions on the selected columns.
 - Whereas the HAVING clause places conditions on groups created by the GROUP BY clause.
-- HAVING clause must follow the FROUP BY clause in a query and must also precede the ORDER BY clause if used.
+- HAVING clause must follow the GROUP BY clause in a query and must also precede the ORDER BY clause if used.
 
 */ 
 -- Syntax
