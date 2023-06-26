@@ -70,13 +70,9 @@
   FULL JOIN [table2_name]
   ON [table1_matchingcolumn] = [table2_matchingcolumn]
 
-
   -- Practical
 
 
  -- End: FULL Join
 
 -- End: Types of Joins
-
-
-
