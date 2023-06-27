@@ -7,7 +7,7 @@
         -- unless multiple columns are in the main query for the subquery to compare its selected
     SELECT [column1], [column2], [columnN]
     FROM [table1_name]
-    WHERE (SELECT [column1]
+    WHERE [column1] IN (SELECT [column1]
             FROM [table2_name]
             WHERE [conditionN])
 
@@ -18,7 +18,7 @@
             ,[PayFrequency]
             ,[ModifiedDate]
         FROM [AdventureWorks2016].[HumanResources].[EmployeePayHistory]
-        WHERE [BusinessEntity] 
+        WHERE [BusinessEntityID] 
         IN 
             (
                 SELECT [BusinessEntityID] 
