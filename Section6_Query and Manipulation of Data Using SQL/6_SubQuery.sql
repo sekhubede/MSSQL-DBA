@@ -1,4 +1,4 @@
--- Start: Sub Query
+-- #region Sub Query
 
     -- Syntax
         -- Nested query, inner query and embeded within the where
@@ -25,5 +25,5 @@
                 FROM [HumanResources].[EmployeePayHistory]
                 WHERE [Rate] > 50.00
             )
-
--- End: Sub Query
+            
+-- #endregion
