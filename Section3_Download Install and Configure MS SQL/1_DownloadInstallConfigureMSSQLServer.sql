@@ -1,5 +1,5 @@
 /*
-Download, install and configure MSSQL
+Download, install and configure MSSQL 2016
 
 For production environments
 - We need to have separate drives for the following:
