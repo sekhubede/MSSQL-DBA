@@ -34,5 +34,9 @@
         END
 
     -- Practical
-
+    CREATE FUNCTION fnGetEmpFullName(@FirstName VARCHAR(50), @LastName VARCHAR(50))
+    RETURNS VARCHAR(101) AS
+    BEGIN
+    RETURN (SELECT @FirstName + ' ' + @LastName);
+    END
 -- #endregion
