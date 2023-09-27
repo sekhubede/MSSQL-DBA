@@ -76,7 +76,7 @@ TCL (Transaction Control Language)
         UPDATE emp SET empName = 'D' WHERE empid = 11
         COMMIT TRAN d
 
-    REVOKE Statement
+    ROLLBACK Statement
     - Used to undo changes made by any command but only before a commit is done.
     - We can't rollback data which has been committed in the database with the help of the commit keyword.
     >   DECLARE @BookCount int
