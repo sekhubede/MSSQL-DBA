@@ -39,4 +39,6 @@
     BEGIN
     RETURN (SELECT @FirstName + ' ' + @LastName);
     END
+
+    SELECT dbo.fnGetEmpFullName(FirstName, LastName) as FullName, Salary FROM [TableName]
 -- #endregion
